@@ -8,7 +8,16 @@ namespace Game_classes
 {
     class Map
     {
-        public int Width;
-        public int Height;
+        //--Instance variables
+        public readonly int Width;  //--readonly - the w and h cannot be changed after they have been created
+        public readonly int Height;
+
+        //--Constructor -   construct new instance of this class
+        public Map(int width, int height)
+        {
+            //--Method level variables
+            Width = width;
+            Height = height;
+        }
     }
 }
