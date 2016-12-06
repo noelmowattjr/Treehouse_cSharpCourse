@@ -8,5 +8,7 @@ namespace Game_classes
 {
     class Map
     {
+        public int Width;
+        private int Height;
     }
 }
