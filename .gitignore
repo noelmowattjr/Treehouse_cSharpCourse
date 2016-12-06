@@ -89,6 +89,9 @@ ipch/
 *.vspx
 *.sap
 
+# NOEL - added this line to ignore the following file
+*.csproj
+
 # TFS 2012 Local Workspace
 $tf/
 
