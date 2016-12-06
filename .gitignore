@@ -89,9 +89,6 @@ ipch/
 *.vspx
 *.sap
 
-# NOEL - added this line to ignore the following file
-Game_classes/Game_classes/Game_classes.csproj
-
 # TFS 2012 Local Workspace
 $tf/
 
