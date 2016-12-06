@@ -90,7 +90,7 @@ ipch/
 *.sap
 
 # NOEL - added this line to ignore the following file
-*.csproj
+Game_classes/Game_classes/Game_classes.csproj
 
 # TFS 2012 Local Workspace
 $tf/
