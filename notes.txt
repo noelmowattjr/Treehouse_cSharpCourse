@@ -1,3 +1,3 @@
 Access Modifiers
-private - only accessible to methods in the same class that they are declared in
-public	- can be accessed by any method and any class
+	private - only accessible to methods in the same class that they are declared in
+	public	- can be accessed by any method and any class
