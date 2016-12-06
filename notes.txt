@@ -1,3 +1,5 @@
 Access Modifiers
 	private - only accessible to methods in the same class that they are declared in
 	public	- can be accessed by any method and any class
+
+readonly	- when prepended to a variable, it makes the variable unchangeable after 		it has been created.
