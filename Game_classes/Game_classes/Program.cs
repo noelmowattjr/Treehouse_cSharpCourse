@@ -19,7 +19,30 @@ namespace Game_classes
             bool results = map.OnMap(point);
 
             Console.WriteLine("point = {0}", results);
+
+            Program prog = new Program();
+            
+            //--Static method
+            Program.Sum_Static(9,1);    //--Can be called in the class directly
+            Sum_Static(10,5);           //--Or not
+
+            //--Non-Static method
+            prog.Sum_Non_Static(20,5);  //--Can ONLY be called onto an instance of a class
+            
             
         }
+        //--Static
+        public static int Sum_Static(int a, int b)
+        {
+            return a + b;
+        }
+
+        //--Non-Static
+        public int Sum_Non_Static(int a, int b)
+        {
+            return a + b;
+        }
     }
+
+    
 }
