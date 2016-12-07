@@ -33,7 +33,7 @@ namespace Game_classes
             int sum = xDiffSq + yDiffSq;
 
             //--Let's square root the sum
-            var results = (int) Math.Sqrt(sum); //--since Math.Sqrt returns a double I cast it as int
+            var results = (int) Math.Sqrt(sum); //--since Math.Sqrt returns a double I truncated it as int
 
             return results;
         }
