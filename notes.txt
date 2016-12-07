@@ -9,3 +9,11 @@ Learned: Today I learned how to create a custom type. I created a class named Po
 Wednesday, 12/07/2016
 	I feel I have a better understanding of static vs non-static methods.
 	Static methods can called on the class directly (or without in custom cases) vs 	non-static methods which require us to instantiate the class 1st and then call the 	method on the instantiated object.
+
+	Truncation
+	To shorten or to cut off part of. In computer programming here’s my example of 		when I may want to truncate my answer.
+	
+	double height = 5.01;
+	
+	if I just wanted my output to just be a 5 int I may write something like:
+	int myHeight = (int) height;
