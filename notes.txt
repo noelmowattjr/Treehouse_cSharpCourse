@@ -17,3 +17,9 @@ Wednesday, 12/07/2016
 	
 	if I just wanted my output to just be a 5 int I may write something like:
 	int myHeight = (int) height;
+
+	Four Principles o OOP
+	1) Encapsulation
+	2) Inheritance
+	3) Polymorphism
+	4) Abstraction
