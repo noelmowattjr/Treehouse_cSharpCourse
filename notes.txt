@@ -3,3 +3,5 @@ Access Modifiers
 	public	- can be accessed by any method and any class
 
 readonly	- when prepended to a variable, it makes the variable unchangeable after 		it has been created.
+
+Learned: Today I learned how to create a custom type. I created a class named Point and instantiated it as a variable taking two int values to which i then passed this point instance as argument in my OnMap method. This is amazing that I finally figured out how to create a custom class/type and utilize it! I must try this on my own after I break!
