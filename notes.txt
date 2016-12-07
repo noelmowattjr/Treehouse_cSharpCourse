@@ -5,3 +5,7 @@ Access Modifiers
 readonly	- when prepended to a variable, it makes the variable unchangeable after 		it has been created.
 
 Learned: Today I learned how to create a custom type. I created a class named Point and instantiated it as a variable taking two int values to which i then passed this point instance as argument in my OnMap method. This is amazing that I finally figured out how to create a custom class/type and utilize it! I must try this on my own after I break!
+
+Wednesday, 12/07/2016
+	I feel I have a better understanding of static vs non-static methods.
+	Static methods can called on the class directly (or without in custom cases) vs 	non-static methods which require us to instantiate the class 1st and then call the 	method on the instantiated object.
