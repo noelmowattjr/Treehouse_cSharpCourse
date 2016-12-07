@@ -37,5 +37,12 @@ namespace Game_classes
 
             return results;
         }
+
+        //--Overload
+        /*  To overload a method means to have two methods with the same name but different parameters  */
+        public int DistanceTo(Point point)
+        {
+            return DistanceTo(point.X, point.Y);
+        }
     }
 }
