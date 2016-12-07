@@ -22,7 +22,12 @@ namespace Game_classes
 
         public bool OnMap(Point point)
         {
+            //--Returns true if in bounds of map otherwise false
             bool inBounds = point.X >= 0 &&  point.X < Width && point.Y >=0 && point.Y < Height;
+
+            bool outOfBounds = point.X < 0 || point.X > Width || point.Y < 0 || point.Y >= Height;
+
+            inBounds = !outOfBounds;
 
             return inBounds;
         }
