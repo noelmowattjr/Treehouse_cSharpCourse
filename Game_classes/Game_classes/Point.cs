@@ -16,5 +16,26 @@ namespace Game_classes
             X = x;
             Y = y;
         }
+
+        public int DistanceTo(int x, int y)
+        {
+            /*  Cartesian Distance Formula  */
+
+            //--Subract from point X and Y
+            int xDiff = X - x;
+            int yDiff = Y - y;
+
+            //--Square the Diff variables
+            int xDiffSq = xDiff * xDiff;
+            int yDiffSq = yDiff * yDiff;
+
+            //--Add the products together
+            int sum = xDiffSq + yDiffSq;
+
+            //--Let's square root the sum
+            var results = (int) Math.Sqrt(sum); //--since Math.Sqrt returns a double I cast it as int
+
+            return results;
+        }
     }
 }
