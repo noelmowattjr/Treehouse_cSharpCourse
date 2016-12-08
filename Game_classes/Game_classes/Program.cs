@@ -11,20 +11,18 @@ namespace Game_classes
         static void Main(string[] args)
         {
             Map map = new Map(width: 8, height: 5);    //--map object
+
+            //--Let's see how the Exception works by
+            //--creating a point that isn't on the map
+            try
+            {
+                MapLocation mapLocation = new MapLocation(20, 20, map);
+            }
+            catch(Exception)
+            {
+                Console.WriteLine("That map location is not on the map!");
+            }
             
-            Point x = new MapLocation(x: 3, y: 2);
-
-            Point p = x;
-
-            map.OnMap(new MapLocation(0,0));
-            Console.WriteLine(map.OnMap(new MapLocation(0, 0)));
-            
-            //--Type checks
-            Console.WriteLine("x is a MapLocation: {0}", x is MapLocation);
-            Console.WriteLine("x is a Point: {0}", x is Point);
-
-            Point point = new Point(0,0);
-            Console.WriteLine("point is a MapLocation: {0}", point is MapLocation);
         }
     }
 
