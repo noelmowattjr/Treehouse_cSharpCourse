@@ -18,11 +18,13 @@ namespace Game_classes
 
             map.OnMap(new MapLocation(0,0));
             Console.WriteLine(map.OnMap(new MapLocation(0, 0)));
-
-            var untitled = 3;
+            
             //--Type checks
-            Console.WriteLine("Test: {0}", x is MapLocation);
-            Console.WriteLine("See if untitled is an int: {0}", untitled is int);
+            Console.WriteLine("x is a MapLocation: {0}", x is MapLocation);
+            Console.WriteLine("x is a Point: {0}", x is Point);
+
+            Point point = new Point(0,0);
+            Console.WriteLine("point is a MapLocation: {0}", point is MapLocation);
         }
     }
 
