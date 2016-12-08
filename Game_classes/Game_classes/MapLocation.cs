@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Game_classes
 {
-    class MapLocation
+    //--Sub-class of the Point class
+    class MapLocation : Point
     {
+        public MapLocation(int x, int y) : base(x,y)    //--base keyword is a reference to Point class
+        {
+
+        }
     }
 }
