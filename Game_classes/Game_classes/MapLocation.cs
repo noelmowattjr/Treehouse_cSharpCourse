@@ -9,9 +9,14 @@ namespace Game_classes
     //--Sub-class of the Point class
     class MapLocation : Point
     {
-        public MapLocation(int x, int y) : base(x,y)    //--base keyword is a reference to Point class
+        public MapLocation(int x, int y, Map map) : base(x,y)    //--base keyword is a reference to Point class
         {
-
+            /*  If point is NOT on the map  */
+            if (!map.OnMap(this))   //--the word this is a keyword that refers to current object
+            {
+                //--Create a new Exception and then throw it
+                throw new Exception();
+            }
         }
     }
 }
