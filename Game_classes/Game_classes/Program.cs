@@ -12,11 +12,17 @@ namespace Game_classes
         {
             Map map = new Map(width: 8, height: 5);    //--map object
             
-            Point point = new Point(x: 8, y: 2);
-            
-            //--Shows us the distance between points 8,2 -and- 5,5
-            Console.WriteLine(point.DistanceTo(5, 5));  //-- Prints // 4
-            
+            Point x = new MapLocation(x: 3, y: 2);
+
+            Point p = x;
+
+            map.OnMap(new MapLocation(0,0));
+            Console.WriteLine(map.OnMap(new MapLocation(0, 0)));
+
+            var untitled = 3;
+            //--Type checks
+            Console.WriteLine("Test: {0}", x is MapLocation);
+            Console.WriteLine("See if untitled is an int: {0}", untitled is int);
         }
     }
 
