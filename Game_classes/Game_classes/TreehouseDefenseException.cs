@@ -8,17 +8,23 @@ namespace Game_classes
 {
     class TreehouseDefenseException : Exception
     {
+        public TreehouseDefenseException()
+        {
+        }
+
         public TreehouseDefenseException(string msg) : base(msg)
         {
-
         }
     }
 
     class OutOfBoundsExeption : TreehouseDefenseException
     {
+        public OutOfBoundsExeption()
+        {
+        }
+
         public OutOfBoundsExeption(string msg) : base(msg)
         {
-
         }
     }
 }
