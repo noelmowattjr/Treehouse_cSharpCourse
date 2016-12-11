@@ -15,7 +15,7 @@ namespace Game_classes
             if (!map.OnMap(this))   //--the word this is a keyword that refers to current object
             {
                 //--Create a new Exception and then throw it
-                throw new Exception();
+                throw new OutOfBoundsExeption(x+", "+y+" is outside of boundaries of map");
             }
         }
     }
