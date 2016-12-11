@@ -18,9 +18,17 @@ namespace Game_classes
             {
                 MapLocation mapLocation = new MapLocation(20, 20, map);
             }
-            catch(Exception)
+            catch (OutOfBoundsExeption)
             {
-                Console.WriteLine("That map location is not on the map!");
+                Console.WriteLine("Unhandled Out of bounds Exception!");
+            }
+            catch (TreehouseDefenseException)
+            {
+                Console.WriteLine("Unhandled Treehous Defense Exception!");
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Unhadled Exception!");
             }
             
         }
