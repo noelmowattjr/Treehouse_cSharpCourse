@@ -14,6 +14,26 @@ namespace Game_classes
 
             //--Let's see how the Exception works by
             //--creating a point that isn't on the map
+
+            //--New array called favoriteAlbums will be 5 items long
+            string[] favorriteAlbums = new string[6];
+
+            //--Add an item
+            favorriteAlbums[0] = "Born Sinner";
+            favorriteAlbums[1] = "2014 Forrest Hill Drive";
+            favorriteAlbums[3] = "Good Kid Mad City";
+            favorriteAlbums[4] = "Nothing Was The Same";
+            favorriteAlbums[2] = "The Noel Mowatt, Jr. EP";
+
+            
+
+            foreach (string i in favorriteAlbums)
+            {
+                Console.WriteLine(i+" and array length is "+favorriteAlbums.Length);
+            }
+            
+
+            /*
             try
             {
                 MapLocation mapLocation = new MapLocation(20, 20, map);
@@ -30,7 +50,7 @@ namespace Game_classes
             {
                 Console.WriteLine("Unhadled Exception!");
             }
-            
+            */
         }
     }
 
