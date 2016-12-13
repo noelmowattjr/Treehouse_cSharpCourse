@@ -8,5 +8,9 @@ namespace Game_classes
 {
     class Path
     {
+        public Path(MapLocation[] path)
+        {
+
+        }
     }
 }
