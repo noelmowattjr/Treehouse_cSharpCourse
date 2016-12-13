@@ -14,5 +14,10 @@ namespace Game_classes
         {
             _path = path;
         }
+
+        public MapLocation GetLocationAt(int pathStep)
+        {
+            return (pathStep < _path.Length) ? _path[pathStep] : null;
+        }
     }
 }
